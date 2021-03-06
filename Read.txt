@@ -1,3 +1,5 @@
+https://ghostbin.co/paste/nvr8q
+
 Ocean Digital setup
 
 sudo apt update
