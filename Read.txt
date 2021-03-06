@@ -1,0 +1,56 @@
+Ocean Digital setup
+
+sudo apt update
+sudo apt install xfce4 xfce4-goodies
+sudo apt install tightvncserver
+
+vncserver
+#enter password
+#kill command 
+vncserver -kill :1
+mv ~/.vnc/xstartup ~/.vnc/xstartup.bak
+
+nano ~/.vnc/xstartup
+
+########################
+#!/bin/bash
+xrdb $HOME/.Xresources
+startxfce4 &
+#########################
+
+chmod +x ~/.vnc/xstartup
+vncserver 
+#VNC Ready
+
+Viewer- realvnc or tightvnc
+IP:5901
+
+Security
+sudo apt-get install -y firefox 
+sudo apt-get install -y tor
+sudo apt-get install -y proxychains4
+
+Proxy set up 
+sudo nano /etc/proxychains4.conf
+#enter socks5 info 
+#enter tor
+*socks5   127.0.0.1   1080
+
+Bleachbit 
+
+sudo dpkg -i
+ 
+Test Proxy
+proxychains4 firefox dnsleaktest.com
+whatismyip
+
+________________________________________________________________________________________________________
+
+CC SIDE
+
+Check limit
+
+Verify location 
+
+
+
